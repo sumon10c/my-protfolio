@@ -56,12 +56,10 @@ const Hero = () => {
               I'm <span className="text-primary">Sumon</span>
             </h1>
 
-            {/* ডেজিগনেশন আপডেট করা হয়েছে */}
             <p className="py-2 text-2xl md:text-3xl font-semibold text-secondary opacity-90">
               Full Stack Web Developer
             </p>
 
-            {/* টেক্সট ডিসক্রিপশন আপডেট করা হয়েছে আপনার স্কিল অনুযায়ী */}
             <p className="py-2 opacity-80 leading-relaxed max-w-lg mx-auto lg:mx-0 text-md md:text-lg">
               I specialize in building scalable web applications using the
               <span className="text-primary font-bold"> MERN Stack</span> and
@@ -77,7 +75,7 @@ const Hero = () => {
             variants={itemVariants}
           >
             {[
-              { icon: FaGithub, link: "https://github.com/yourusername" },
+              { icon: FaGithub, link: "https://github.com/sumon10c" },
               {
                 icon: FaLinkedin,
                 link: "https://linkedin.com/in/yourusername",
@@ -99,21 +97,22 @@ const Hero = () => {
             ))}
           </motion.div>
 
-          {/* রেজুমে বাটন */}
+          {/* রেজুমে বাটন - যা শুধু ওপেন হবে */}
           <motion.div className="mt-2" variants={itemVariants}>
             <motion.a
-              href="/resume.pdf" // এখানে আপনার রেজুমে ফাইলের সঠিক নাম দিন
-              download
-              className="btn btn-primary lg:btn-lg px-10 shadow-xl"
+              href="/assets/Sumon_Chakrabarty_Resume.pdf"
+              target="_blank" // নতুন ট্যাবে ওপেন করার জন্য
+              rel="noopener noreferrer"
+              className="btn btn-primary lg:btn-lg px-10 shadow-xl text-white"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              Download Resume
+              My Resume
             </motion.a>
           </motion.div>
         </motion.div>
 
-        {/* ফটো সেকশন - ট্রান্সপারেন্ট ছবির জন্য আপডেট */}
+        {/* ফটো সেকশন */}
         <motion.div
           className="flex-1 flex justify-center lg:justify-end order-1 lg:order-2"
           initial="hidden"
@@ -122,12 +121,11 @@ const Hero = () => {
           variants={imageVariants}
         >
           <div className="relative group">
-            {/* ছবির সাইজ এবং কন্টেইনার স্টাইল */}
             <div className="w-72 md:w-96 lg:w-[480px] transition-all duration-500">
               <motion.img
                 src="https://i.ibb.co.com/7d50Gpdx/1772650177831-removebg-preview.png"
                 alt="Sumon"
-                className="w-full h-auto drop-shadow-2xl" // ট্রান্সপারেন্ট ছবিতে শ্যাডো দেওয়ার জন্য drop-shadow ভালো কাজ করে
+                className="w-full h-auto drop-shadow-2xl"
                 whileHover={{ scale: 1.05 }}
                 transition={{ duration: 0.4 }}
               />

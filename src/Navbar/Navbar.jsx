@@ -1,13 +1,11 @@
 import React from "react";
 
 const Navbar = () => {
-  // স্মুথ স্ক্রলিং এবং মোবাইল ড্রপডাউন বন্ধ করার ফাংশন
   const handleScroll = (e, targetId) => {
     e.preventDefault();
     const targetElement = document.getElementById(targetId);
 
     if (targetElement) {
-      // নেভিবার উচ্চতা বাদ দিয়ে স্ক্রল করবে (যাতে সেকশন হেডিং না ঢেকে যায়)
       const offset = 80;
       const elementPosition = targetElement.getBoundingClientRect().top;
       const offsetPosition = elementPosition + window.pageYOffset - offset;
@@ -18,7 +16,6 @@ const Navbar = () => {
       });
     }
 
-    // ড্রপডাউন মেনু বন্ধ করা (মোবাইল ভিউয়ের জন্য)
     const elem = document.activeElement;
     if (elem) {
       elem.blur();
@@ -82,7 +79,6 @@ const Navbar = () => {
             {navLinks}
           </ul>
         </div>
-
         <a
           onClick={(e) => {
             e.preventDefault();
@@ -102,11 +98,11 @@ const Navbar = () => {
 
       <div className="navbar-end">
         <a
-          href="/path-to-your-resume.pdf"
-          download="Sumon_Resume.pdf"
+          href="/assets/Sumon_Chakrabarty_Resume.pdf"
+          download="Sumon_Chakrabarty_Resume.pdf"
           className="btn btn-primary text-white rounded-full px-6 shadow-md hover:scale-105 transition-transform"
         >
-          Resume
+         Download Resume
         </a>
       </div>
     </div>
