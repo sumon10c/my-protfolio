@@ -44,6 +44,28 @@ const Projects = () => {
       improvements:
         "Adding a weather-based crop suggestion feature for farmers and a multi-language support system.",
     },
+    {
+      title: "GameStore",
+      subtitle: "Next.js Gaming Marketplace",
+      description:
+        "A high-performance gaming platform where users can explore trending titles, watch trailers, and purchase the latest games with a seamless UI/UX.",
+      image:
+        "https://i.ibb.co.com/5X9pGJQn/Gemini-Generated-Image-lxdu08lxdu08lxdu.png",
+      tech: [
+        "Next.js",
+        "Tailwind CSS",
+        "NextAuth.js",
+        "MongoDB",
+        "Framer Motion",
+      ],
+      live: "https://game-store-beta-eight.vercel.app/",
+      githubClient: "https://github.com/sumon10c/game-store",
+      githubServer: "https://github.com/sumon10c/game-store",
+      challenges:
+        "Implementing dynamic routing for game details and managing state for a smooth, immersive user experience across all devices.",
+      improvements:
+        "Integrating a community review system and a real-time 'Game News' API to keep users updated on latest releases.",
+    },
   ];
 
   return (
