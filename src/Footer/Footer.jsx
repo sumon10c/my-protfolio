@@ -43,9 +43,9 @@ const Footer = () => {
           >
             {[
               { icon: <FaGithub />, link: "https://github.com/sumon10c" },
-              { icon: <FaLinkedin />, link: "#" },
-              { icon: <FaFacebook />, link: "#" },
-              { icon: <FaTwitter />, link: "#" },
+              { icon: <FaLinkedin />, link: "https://www.linkedin.com/in/sumon-chakrabarty-sc/" },
+              { icon: <FaFacebook />, link: "https://facebook.com/yourusername" },
+             
             ].map((social, index) => (
               <a
                 key={index}

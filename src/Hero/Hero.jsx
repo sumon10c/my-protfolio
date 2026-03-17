@@ -78,9 +78,9 @@ const Hero = () => {
               { icon: FaGithub, link: "https://github.com/sumon10c" },
               {
                 icon: FaLinkedin,
-                link: "https://linkedin.com/in/yourusername",
+                link: "https://www.linkedin.com/in/sumon-chakrabarty-sc/",
               },
-              { icon: FaTwitter, link: "https://twitter.com/yourusername" },
+            
               { icon: FaFacebook, link: "https://facebook.com/yourusername" },
             ].map((social, index) => (
               <motion.a
