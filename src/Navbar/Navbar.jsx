@@ -6,7 +6,7 @@ const Navbar = () => {
     const targetElement = document.getElementById(targetId);
 
     if (targetElement) {
-      const offset = 80;
+      const offset = 80; // স্টিকি নববারের উচ্চতা অনুযায়ী অ্যাডজাস্ট করা হয়েছে
       const elementPosition = targetElement.getBoundingClientRect().top;
       const offsetPosition = elementPosition + window.pageYOffset - offset;
 
@@ -16,6 +16,7 @@ const Navbar = () => {
       });
     }
 
+    // ড্রপডাউন মেনু বন্ধ করার জন্য ব্লাার ব্যবহার
     const elem = document.activeElement;
     if (elem) {
       elem.blur();
@@ -53,7 +54,7 @@ const Navbar = () => {
   );
 
   return (
-    <div className="navbar bg-base-100/80 backdrop-blur-md shadow-md sticky top-0 z-50 px-4 md:px-10">
+    <div className="navbar bg-base-100/80 backdrop-blur-md shadow-md sticky top-0 z-50 px-4 md:px-10 transition-all duration-300">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -97,13 +98,13 @@ const Navbar = () => {
       </div>
 
       <div className="navbar-end">
-        <a
-          href="/assets/Sumon_Chakrabarty_Resume.pdf"
-          download="Sumon_Chakrabarty_Resume.pdf"
-          className="btn btn-primary text-white rounded-full px-6 shadow-md hover:scale-105 transition-transform"
+        {/* Hire Me Button - এটি ক্লিক করলে Contact সেকশনে স্ক্রল করবে */}
+        <button
+          onClick={(e) => handleScroll(e, "contact")}
+          className="btn btn-primary text-white rounded-full px-8 shadow-lg shadow-primary/20 hover:scale-105 active:scale-95 transition-all font-bold"
         >
-         Download Resume
-        </a>
+          Hire Me
+        </button>
       </div>
     </div>
   );
