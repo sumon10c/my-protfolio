@@ -80,7 +80,7 @@ const Hero = () => {
                 icon: FaLinkedin,
                 link: "https://www.linkedin.com/in/sumon-chakrabarty-sc/",
               },
-            
+
               { icon: FaFacebook, link: "https://facebook.com/yourusername" },
             ].map((social, index) => (
               <motion.a
@@ -100,7 +100,7 @@ const Hero = () => {
           {/* রেজুমে বাটন - যা শুধু ওপেন হবে */}
           <motion.div className="mt-2" variants={itemVariants}>
             <motion.a
-              href="/assets/Sumon_Chakrabarty_Resume.pdf"
+              href="/public/assets/Sumon_Chakrabarty_Resume.pdf"
               target="_blank" // নতুন ট্যাবে ওপেন করার জন্য
               rel="noopener noreferrer"
               className="btn btn-primary lg:btn-lg px-10 shadow-xl text-white"
