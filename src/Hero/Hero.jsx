@@ -80,8 +80,10 @@ const Hero = () => {
                 icon: FaLinkedin,
                 link: "https://www.linkedin.com/in/sumon-chakrabarty-sc/",
               },
-
-              { icon: FaFacebook, link: "https://facebook.com/yourusername" },
+              {
+                icon: FaFacebook,
+                link: "https://facebook.com/yourusername", // এখানে আপনার ইউজারনেম দিতে পারেন
+              },
             ].map((social, index) => (
               <motion.a
                 key={index}
@@ -97,11 +99,11 @@ const Hero = () => {
             ))}
           </motion.div>
 
-          {/* রেজুমে বাটন - যা শুধু ওপেন হবে */}
+          {/* রেজুমে বাটন - গুগল ডকস লিঙ্ক সহ */}
           <motion.div className="mt-2" variants={itemVariants}>
             <motion.a
-              href="/public/assets/Sumon_Chakrabarty_Resume.pdf"
-              target="_blank" // নতুন ট্যাবে ওপেন করার জন্য
+              href="https://docs.google.com/document/d/107dVeR5EFPpx-NMwN4nFsj1Hej5iK1r8Cu7HhcWkcKc/edit?usp=sharing"
+              target="_blank"
               rel="noopener noreferrer"
               className="btn btn-primary lg:btn-lg px-10 shadow-xl text-white"
               whileHover={{ scale: 1.05 }}
@@ -112,7 +114,7 @@ const Hero = () => {
           </motion.div>
         </motion.div>
 
-        {/* ফটো সেকশন */}
+        {/* ফটো সেকশন - ডান পাশ থেকে আসবে */}
         <motion.div
           className="flex-1 flex justify-center lg:justify-end order-1 lg:order-2"
           initial="hidden"
@@ -124,7 +126,7 @@ const Hero = () => {
             <div className="w-72 md:w-96 lg:w-[480px] transition-all duration-500">
               <motion.img
                 src="https://i.ibb.co.com/7d50Gpdx/1772650177831-removebg-preview.png"
-                alt="Sumon"
+                alt="Sumon Chakrabarty"
                 className="w-full h-auto drop-shadow-2xl"
                 whileHover={{ scale: 1.05 }}
                 transition={{ duration: 0.4 }}
