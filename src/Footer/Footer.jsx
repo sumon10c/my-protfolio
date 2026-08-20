@@ -234,7 +234,7 @@ const Footer = () => {
               "
             >
               <span className="h-2 w-2 animate-pulse rounded-full bg-success" />
-              Available for new projects
+              
             </div>
           </motion.div>
 
@@ -496,20 +496,7 @@ const Footer = () => {
 
           {/* Made With */}
 
-          <p
-            className="
-              flex
-              items-center
-              gap-1.5
-              text-xs
-              font-medium
-              text-base-content/40
-              sm:text-sm
-            "
-          >
-            Built with
-            <FaHeart className="text-red-500" size={11} />& code
-          </p>
+       
 
           {/* Back To Top */}
 
